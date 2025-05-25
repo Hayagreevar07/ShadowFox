@@ -1,0 +1,14 @@
+import requests
+from bs4 import BeautifulSoup
+
+url = "https://www.python.org/"
+response = requests.get(url)
+
+if response.status_code == 200:
+    soup = BeautifulSoup(response.text, "html.parser")
+    posts = soup.select(".medium-widget.blog-widget .menu li a")
+    print("Latest Blog Posts on Python.org:\n")
+    for i, post in enumerate(posts, 1):
+        print(f"{i}. {post.text.strip()}")
+else:
+    print("Failed to retrieve content.")
