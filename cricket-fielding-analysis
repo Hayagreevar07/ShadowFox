@@ -11,7 +11,7 @@ performance = {}
 for _, row in df.iterrows():
     player = row["Player Name"]
     
-    # Create a new entry if the player is not already in the dictionary
+ 
     if player not in performance:
         performance[player] = {
             "CP": 0, "GT": 0, "C": 0, "DC": 0, "ST": 0,
