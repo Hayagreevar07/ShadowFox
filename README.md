@@ -1,15 +1,15 @@
+# 🎮 Hangman Game in Python
 
-#  Python Web Scraper
+A complete console-based Hangman game with:
+- Random word selection
+- ASCII-art hangman display
+- Input validation and game loop
+- Win/loss condition checks
+- Replay functionality
 
-This project is a simple Python web scraper that extracts the latest blog post titles from [python.org](https://www.python.org/).
+---
 
-##  Requirements
-
-- Python 3.x
-- `requests`
-- `beautifulsoup4`
-
-##  Installation
+## 🚀 Run the Game
 
 ```bash
-pip install requests beautifulsoup4
+python hangman.py
