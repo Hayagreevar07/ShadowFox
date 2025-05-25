@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import csv
 
 
-url = "https://www.shadowfox.in/"
+url = "https://realpython.com/"
 
 def fetch_webpage(url):
     try:
