@@ -1,6 +1,6 @@
 import random
 
-# 1. Variables
+
 pi = 22 / 7
 print("Value of pi:", pi)
 print("Data type of pi:", type(pi))
@@ -13,7 +13,7 @@ T = 3
 simple_interest = (P * R * T) / 100
 print("Simple Interest:", simple_interest)
 
-# 2. Numbers
+
 print("Formatted (Octal):", format(145, 'o'))
 
 radius = 84
@@ -25,7 +25,7 @@ distance = 490
 time_seconds = 7 * 60
 print("Speed (m/s):", int(distance / time_seconds))
 
-# 3. List
+
 justice_league = ["Superman", "Batman", "Wonder Woman", "Flash", "Aquaman", "Green Lantern"]
 print("Members:", len(justice_league))
 
@@ -47,7 +47,7 @@ justice_league.sort()
 print("Sorted Team:", justice_league)
 print("New Leader:", justice_league[0])
 
-# 4. If Condition
+
 height = float(input("Enter height in meters: "))
 weight = float(input("Enter weight in kilograms: "))
 bmi = weight / (height ** 2)
@@ -95,7 +95,6 @@ if c1 and c2 and c1 == c2:
 else:
     print("They don't belong to the same country")
 
-# 5. For Loop
 rolls = [random.randint(1, 6) for _ in range(20)]
 count_6 = rolls.count(6)
 count_1 = rolls.count(1)
