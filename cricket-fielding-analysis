@@ -24,33 +24,33 @@ for _, row in df.iterrows():
 
    
     if pick == "Y":
-        performance[player]["CP"] += 1  # Clean Pick
+        performance[player]["CP"] += 1  
     if throw == "Y":
-        performance[player]["GT"] += 1  # Good Throw
+        performance[player]["GT"] += 1  
     if pick == "C":
-        performance[player]["C"] += 1   # Catch
+        performance[player]["C"] += 1   
     if pick == "DC":
-        performance[player]["DC"] += 1  # Dropped Catch
+        performance[player]["DC"] += 1  
     if pick == "S":
-        performance[player]["ST"] += 1  # Stumping
+        performance[player]["ST"] += 1  
     if throw == "RO":
-        performance[player]["RO"] += 1  # Run Out
+        performance[player]["RO"] += 1  
     if throw == "MR":
-        performance[player]["MRO"] += 1 # Missed Run Out
+        performance[player]["MRO"] += 1 
     if throw == "DH":
-        performance[player]["DH"] += 1  # Direct Hit
+        performance[player]["DH"] += 1  
 
     performance[player]["RS"] += runs
 
 weights = {
-    "CP": 1,    # Clean Pick
-    "GT": 1,    # Good Throw
-    "C": 3,     # Catch
-    "DC": -3,   # Dropped Catch
-    "ST": 3,    # Stumping
-    "RO": 3,    # Run Out
-    "MRO": -2,  # Missed Run Out
-    "DH": 2     # Direct Hit
+    "CP": 1,    
+    "GT": 1,    
+    "C": 3,     
+    "DC": -3,  
+    "ST": 3,    
+    "RO": 3,    
+    "MRO": -2,  
+    "DH": 2     
 }
 
 print(f"{'Player Name':<20} {'PS':<5}")
